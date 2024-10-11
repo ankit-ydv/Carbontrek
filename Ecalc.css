@@ -1,0 +1,195 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+body{height: 200px;}
+header {
+	text-align: center;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+	border-radius: 0% 0% 85% 85% / 30%;
+}
+header .overlay{
+	width: 100%;
+	height: 80%;
+	padding: 50px;
+	color: #0e0d0d;
+	text-shadow: 1px 1px 1px #f45905;
+}
+
+h1 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 55px;
+	margin-bottom: 20px;
+
+}
+p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	margin-bottom: px;
+	color: #6e53e7;
+	text-shadow: 1px 1px 1px #000000;
+
+}
+
+h3{
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 5px;
+	color: #060203;
+	text-shadow: 1px 1px 1px #09a0d7;
+}
+
+button {
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	border-radius: 50px;
+	color: #0b0101;
+	background: #2781ad;
+	margin-bottom: 50px;
+	box-shadow: 0 3px 20px 0 #0000003b;
+}
+.glow-on-hover {
+    width: 160px;
+    height: 40px;
+    border: none;
+    outline: none;
+    color: #a4e5f4;
+    background: #ff0a0a;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #da2929
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+html
+{
+font-family: Source Sans Pro, sans serif;
+background-color:#afbfd8;
+background: linear-gradient(rgba(251, 251, 251, 0.5), rgba(255, 255, 255, 0.5)), 
+                url('imagess/Ecalc/footprint-co2.png')
+
+}
+body{
+	font-family: Source Sans Pro, sans serif;
+background-color:#0065fe;
+background: linear-gradient(rgb(14, 241, 78), rgba(255, 255, 255, 0.5)), 
+                url('imagess/Ecalc/footprint-co2.png')
+
+}
+
+.num
+{
+	width: 5ch;
+}
+
+.power
+{
+	width: 7ch;
+	text-align: right;
+}
+
+.fieldSet
+{
+	display:inline-block;
+}
+
+table
+{
+	border: 2px solid black;
+	margin-left: auto;
+    margin-right: auto;
+	width: 900;
+	height: 300;
+}
+
+th,td
+{
+	border-bottom: 4px solid #45220f;
+}
+
+tr:hover
+{
+	background-color: #e45167 !important;
+}
+
+tr:nth-child(even) 
+{
+	background-color: #acdf9f;
+}
+tr:nth-child(odd) {
+	background-color: #7aa3ca;
+}
+
+select 
+{
+    width: 15ch;
+    padding: 4px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #8ceaea;
+}
+h2{
+	font-family:  Arial, Helvetica, sans-serif ;
+	margin-bottom: 20px;
+	color: #ff004c;
+	text-shadow: 1px 1px 1px #010803;
+	font-size: 20px;
+	margin-bottom: 5px;
+
+}
+
+input
+{
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+	padding: 3px;
+	background-color: #e9a4d4e4;
+}

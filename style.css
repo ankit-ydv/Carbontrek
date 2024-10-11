@@ -45,6 +45,10 @@ nav {
   color: var(--text);
   cursor: pointer;
 }
+a {
+  color: inherit; 
+  text-decoration: none; 
+}
 
 .sitename {
   font-weight: bold;
